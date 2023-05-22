@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Schedule</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Редагувати заняття</h1>
+    <form action="updateLesson" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="number" name="id" class="form-control" placeholder="id" required>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="dayOfTheWeek_id" class="form-control" placeholder="dayOfTheWeek_id" required>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="lessonNumber_id" class="form-control" placeholder="lessonNumber_id" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" name="grade" class="form-control" placeholder="grade" required>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="subject_id" class="form-control" placeholder="subject_id" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="number" name="teacher_id" class="form-control" placeholder="teacher_id" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="classroom" class="form-control" placeholder="classroom" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="submit" value="Оновити" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
